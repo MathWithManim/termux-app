@@ -1,4 +1,4 @@
-name: Buildjsixsveen
+name: Builduhidmewbduxw.j
 on: [push, workflow_dispatch]
 jobs:
   build:
@@ -10,11 +10,13 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      - name: Build APK
-        run: |
-          chmod +x gradlew
-          ./gradlew assembleDebug
-      - uses: actions/upload-artifact@v4
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+      - name: Build with Gradle
+        run: ./gradlew assembleDebug
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
         with:
           name: termux-app
-          path: app/build/outputs/apk/debug/*.apk 
+          path: app/build/outputs/apk/debug/
+          retention-days: 7
