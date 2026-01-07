@@ -336,7 +336,7 @@ public final class TermuxConstants {
     /** Termux app name */
     public static final String TERMUX_APP_NAME = "TermuxS"; // CHANGED: "Termux" -> "TermuxS"
     /** Termux package name */
-    public static final String TERMUX_PACKAGE_NAME = "com.termuxs"; // CHANGED: "com.termux" -> "com.termuxs"
+    public static final String TERMUX_PACKAGE_NAME = "com.termux"; // CHANGED: "com.termux" -> "com.termuxs"
     /** Termux GitHub repo name */
     public static final String TERMUX_GITHUB_REPO_NAME = "termux-app"; // Default: "termux-app"
     /** Termux GitHub repo url */
