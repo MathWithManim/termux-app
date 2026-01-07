@@ -1,4 +1,4 @@
-name: Buildj
+name: Buildjsixsveen
 on: [push, workflow_dispatch]
 jobs:
   build:
